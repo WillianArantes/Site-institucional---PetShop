@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}/*é um tipo de reset ou normalização para evitar coisas indesejdas nos estilos padrao  dos diferentes navegadores */
+
+body{
+    color: #263138;/*definindo cor de todas as fontes da pagina*/
+}
+header{
+    background-color: #4874ad;
+    display:flex;
+    justify-content: space-between;/**quero justificar nosso conteudo , movimento horizontal */
+    /*padding ordem: topo, direita, baixo, esquerda*/
+    padding: 24px 80px 24px 80px;
+    align-items: center;/*alinhar nossos itens ao centro, alinha na vertical*/
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 32px;
+}
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 35px;/*espacador: utilizado para dar espaço entre os elementos, melhor que margin*/
+    /*padding ordem: topo, direita, baixo, esquerda*/
+    padding: 24px 80px 24px 150px;
+    position: relative;/*para que os outros elementos posicionem com relacao a esse elemento*/
+}
+.imagem-inicio{
+    width: 580px;
+    height: 580px;
+}
+.inicio{
+    width: 85%;
+}
+h1,
+h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.paragrafo{
+    font-size: 15px;
+    line-height: 150%;/*altura da linha*/
+    margin-bottom: 32px;
+}
+.buttom{
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #2e3e53;
+    color: white;
+}
+.buttom-transparente{
+    text-underline-offset: 4px;/*deixa o sublinhado mais separado*/
+    color: #00295e;
+    font-weight: 600;
+    padding: 20px 35px;
+}
+.absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+#clinica{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 100px;
+    
+}
+#clinica li{
+    margin-bottom: 16px;    
+    margin-left: 32px;
+}
+.clinica{
+    width: 68%;
+}
+#clinica img{
+    padding: 35px 0px 0px 0px;
+}
+#farmacia{
+    text-align: center;
+    padding: 64px 80px ;
+
+}
+#farmacia .paragrafo {
+    width: 950px;
+    margin: 0 auto;
+}
+#farmacia img{
+    margin: 64px auto;
+}
+#duvidas{
+    display: flex;
+    gap: 64px;
+    padding: 64px 80px;
+    align-items: center;
+    justify-content: center;
+}
+.duvida{
+    position: relative;
+    
+
+}
+.duvida h3{
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    padding: 25px;
+    cursor: pointer;
+}
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;/*vai ficar a 24´px em relacao a direita do conteiner div*/
+}
+.duvida .paragrafo{
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-right: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0 ;/*transparencia do elemento*/
+    overflow: hidden ;/*overflow- transbordar. hidden - escondido*/
+    transition: 2
+}
+.duvida.ativa .paragrafo{
+    height: fit-content;/*altura vai se ajustar para caber o conteudo.*/
+    opacity: 1;
+    padding: 24px;
+}/*quando esta junto .duvida.ativa é para selecionar as duas. ativa quer dizer que o usuario esta lendo no momento atual*/
+
+.container-duvida{
+   width: 55%;
+}
+footer{
+    background-color: rgba(108, 177, 255, 0.25);
+    display: flex;
+    padding: 60px 80px;
+    gap: 80px;
+    justify-content: space-between;
+}
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+    
+}
+footer  nav a{
+    margin-left: 2px;
+    color: #263138;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 16px;
+    max-width: 350px;
+
+    
+}
+footer a,p{
+    color: #263138;
+    text-decoration: none;
+    margin-bottom: 16px;
+    
+}
+.paragrafo-frase {
+    width: 50%;
+}
+#copyrigth a{
+    text-decoration: none;
+    color: #ff725e;
+    margin: 5px;
+}
+#copyrigth {
+    background-color: #263138;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
